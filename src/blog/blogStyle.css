@@ -32,9 +32,9 @@ main {
     margin-top: 20px;
     margin-bottom: 10px;
  }
- /*body {
+ body {
      background-image: url(test.jpg);
- }*/
+ }
  section {
      background-color: black;
      color: green;
@@ -61,4 +61,8 @@ main {
      bottom: 0px;
      left: 0px;
      right: 0px;
+ }
+ body {
+     margin: 0;
+     padding: 0;
  }
