@@ -10,10 +10,10 @@
       padding: 0px;
       display: inline-flexbox;
   }
-  .rightside {
+  /* .rightside {
       float: right;
       display: inline-block;
-  }
+  } */
 
 /* Small and up (Landscape Phones) */
 /*@media (max-width: 576px) {

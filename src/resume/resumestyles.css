@@ -6,7 +6,7 @@
     margin-left: 0px;
 doesnt do what I wanted */
 body{
-    background-color: blue;
+    /* background-color: blue; */
 }
 #contrast{
     background-color: darkblue;
@@ -46,6 +46,8 @@ h1 ,h4, p, ul, li, a{
   h2, .info{
       color: lightgrey;
       background-color: white;
+      padding: 0px;
+      max-width: auto;
   }
   .info{
       text-align: center;
