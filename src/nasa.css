@@ -1,0 +1,29 @@
+body {
+  margin: 0 auto;
+  width: 850px;
+  font-family: 'Bowlby One SC', cursive;
+}
+main {
+  height: 450px;
+  background-image: url(lunarlander-sept2019-879x485.jpg);
+  color: white;
+}
+section {
+  display: flex;
+  height: 324px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: wheat;
+}
+article {
+  display: flex;
+  width: 270px;
+  height: 374;
+  background-color: wheat;
+  justify-content: center;
+}
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
