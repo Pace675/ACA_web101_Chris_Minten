@@ -36,5 +36,109 @@ body {
 .navbar {
     grid-row: 1/1;
     grid-column: 1/10;
-    background:darkgray;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    /* justify-self: right; */
+    /* background:rgb(185, 109, 109); */
+    height: 50px;
+    align-items: center;
+}
+.navbar1:hover{
+    background-color: navy;
+}
+.downsize {
+    width: 50px;
+    height: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* justify-self: right; */
+}
+.todo {
+    display: flex;
+    color: darkgrey;
+    justify-content: center;
+}
+.proof {
+    font-family: 'Indie Flower', cursive;
+}
+.calculator-flex {
+    grid-template-rows: 2/-1;
+    grid-template-columns: 3;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: darkslateblue;
+  }
+  .input {
+    border: 1px solid darkgray;
+    height: 25%;
+    width: 100%;
+    justify-content: right;
+  }
+  .inputBox {
+    border: 1px solid blue;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    font-size: 64px;
+    text-align: right;
+  }
+  .button-content {
+    border: 1px solid gray;
+    height: 75%;
+    width: 100%;
+  }
+  .button-row {
+    border: 1px solid blue;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-element {
+    height: 100%;
+    width: 25%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  header {
+    height: 100px;
+    width: 100%;
+    background-color:grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* To: Juan I am trying to get the calculator to appear in grid-row
+  2-4 and column 2 it is not working when I select that grid area
+  well it eats my calculator display >.< */
+/* .downsize {
+    display: flex;
+    justify-self: left;
+} */
+.scroll-up {
+    grid-template-rows: 1/-1;
+    grid-column: 1/-1;
+    /* for some reason I can not assign this scrolling feature to 
+    row 3/4 and column 1......*/
 }
