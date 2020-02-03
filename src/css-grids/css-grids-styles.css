@@ -137,8 +137,8 @@ body {
     justify-self: left;
 } */
 .scroll-up {
-    grid-template-rows: 1/-1;
-    grid-column: 1/-1;
+    grid-template-rows: 4/-1;
+    grid-template-columns: 1/-1;
     /* for some reason I can not assign this scrolling feature to 
     row 3/4 and column 1......*/
 }
