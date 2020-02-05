@@ -30,15 +30,11 @@ h1{
   align-items: center;
   justify-content: center;
 }
-/* .sub1 {
-  /* display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 3;
-  justify-content: ;
+.sub1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   font-size: 12px;
   font-weight: 100;
 }
-p, .sub1 {
-  position: unset;
-} */
