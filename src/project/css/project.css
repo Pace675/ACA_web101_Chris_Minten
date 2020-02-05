@@ -169,7 +169,6 @@ img {
   -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
   transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
   position: relative;
-  background-color: beige;
   /* background-color: beige;  
   Change beige to a contrasting color here so we can easily see 
   the page responsiveness and if I decide to add more widgets*/
