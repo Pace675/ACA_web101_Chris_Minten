@@ -1,0 +1,91 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+}
+div {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+ul {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+li{
+  font-family: 'Bebas Neue', cursive;
+  padding: 0px 10px 0px 10px;
+  text-transform: uppercase;
+  color: black;
+}
+img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+
+}
+.the-beacon {
+  height: 554px;
+  width: auto;
+  color: black;
+}
+.the-beacon, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: green;
+}
+.bottom-containers, .small-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  float: unset;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+}
+h3 {
+  padding-left: 150px;
+}
+/* #footer ul li a {
+	background: url(../images/icons.jpg) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+  width: 44px;
+}
+#footer div ul li #twitter {
+	background-position: 0 0;
+}
+#footer div ul li #twitter:hover {
+	background-position: -44px 0;
+}
+#footer div ul li #facebook {
+	background-position: 0 -44px;
+}
+#footer div ul li #facebook:hover {
+	background-position: -44px -44px;
+}
+#footer div ul li #googleplus {
+	background-position: 0 -88px;
+}
+#footer div ul li #googleplus:hover {
+	background-position: -44px -88px;
+}
+#footer div ul li #pinterest {
+	background-position: 0 -132px;
+}
+#footer div ul li #pinterest:hover {
+	background-position: -44px -132px;
+} */
