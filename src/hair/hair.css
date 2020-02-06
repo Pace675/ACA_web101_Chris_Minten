@@ -1,3 +1,112 @@
+.banner {
+  background-image: url(./images/the-beacon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 574px;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  padding-top: unset;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+}
+
+ul {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+li {
+  font-family: 'Bebas Neue', cursive;
+  padding: 20px 30px 50px 25px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 24px;
+}
+img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+
+}
+div, .top-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.font-two {
+  font-family: 'Indie Flower', cursive;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+.font-three {
+  font-family: 'Lustria', serif;
+  font-size: 46px;
+  color: white;
+}
+.font-four {
+  font-family: 'Tenor Sans', sans-serif;
+}
+a:hover, a:link, a:active {
+  text-decoration: none;
+  color: green;
+}
+.bgc-one {
+  background-color: white;
+}
+.bgc-two {
+  background-color: black;
+}
+.hair-styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.img-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  padding: 20px 20px 20px 20px;
+}
+button {
+  height: 66px;
+  width: 160px;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+h3 {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  padding-left: 90px;
+}
+footer {
+  display: flex;
+  align-items: flex-end;
+  background-color: black;
+}
+.ban {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /*been trying to mess with this part and the text does not
+  do what I want it to, thinking of redoing this in grids */
+}
+
+
+
+
+/* This is my old css, I'm leaving it in because I wanted to know
+why my footer was being placed at top of the page
 body {
   background-color: white;
   display: flex;
@@ -47,8 +156,8 @@ img {
   justify-content: space-evenly;
 }
 footer {
-  float: unset;
-  display: flex;
+  /* float: unset;
+  display: inline-block;
   background-color: black;
   color: white;
   justify-content: center;
@@ -56,7 +165,24 @@ footer {
 h3 {
   padding-left: 150px;
 }
-/* #footer ul li a {
+.one-one {
+  display: inline-block;
+  /* flex-direction: row;
+  float: unset;
+  align-content: unset;
+} */
+
+
+
+
+
+
+
+
+
+/*  This is code from the original website I put here in the comments section 
+because I have questionsas to why the original dev used so many psuedo classes
+#footer ul li a {
 	background: url(../images/icons.jpg) no-repeat 0 0;
 	display: block;
 	height: 44px;
