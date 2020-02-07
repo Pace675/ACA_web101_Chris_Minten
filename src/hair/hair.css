@@ -1,4 +1,4 @@
-.banner {
+ .banner {
   background-image: url(./images/the-beacon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +97,7 @@ footer {
 .ban {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end; 
   /*been trying to mess with this part and the text does not
   do what I want it to, thinking of redoing this in grids */
 }
@@ -106,8 +106,8 @@ footer {
 
 
 /* This is my old css, I'm leaving it in because I wanted to know
-why my footer was being placed at top of the page
-body {
+why my footer was being placed at top of the page*/
+ /* body {
   background-color: white;
   display: flex;
   flex-direction: column-reverse;
@@ -156,8 +156,8 @@ img {
   justify-content: space-evenly;
 }
 footer {
-  /* float: unset;
-  display: inline-block;
+  float: unset;
+  display: flex;
   background-color: black;
   color: white;
   justify-content: center;
@@ -167,10 +167,10 @@ h3 {
 }
 .one-one {
   display: inline-block;
-  /* flex-direction: row;
+  flex-direction: row;
   float: unset;
   align-content: unset;
-} */
+}  */
 
 
 
@@ -182,7 +182,8 @@ h3 {
 
 /*  This is code from the original website I put here in the comments section 
 because I have questionsas to why the original dev used so many psuedo classes
-#footer ul li a {
+*/
+/* #footer ul li a {
 	background: url(../images/icons.jpg) no-repeat 0 0;
 	display: block;
 	height: 44px;
@@ -214,4 +215,4 @@ because I have questionsas to why the original dev used so many psuedo classes
 }
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
-} */
+}  */
