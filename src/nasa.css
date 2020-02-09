@@ -1,0 +1,69 @@
+body {
+  margin: 0 auto;
+  width: 850px;
+  font-family: 'Bowlby One SC', cursive;
+}
+main {
+  height: 450px;
+  background-image: url(lunarlander-sept2019-879x485.jpg);
+  color: white;
+}
+section {
+  display: flex;
+  height: 324px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: wheat;
+}
+article {
+  display: flex;
+  width: 270px;
+  height: 374;
+  background-color: wheat;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+h1{
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 0px;
+  align-items: center;
+
+}
+.sub2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 0px;
+  align-items: left;
+
+}
+/* .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  text-align: match-parent;
+} */
+.largebox {
+  display: flex;
+
+  height: 80px;
+}
+input {
+  padding-bottom: 10px;
+}

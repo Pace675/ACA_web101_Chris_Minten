@@ -1,0 +1,185 @@
+main.main-container {
+    background: black;
+    border: 1px solid gray;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10%, repeat(8, 1fr) 10%;
+    grid-template-rows: 80px 1fr 150px 50px;
+    
+
+}
+.image {
+    border: 1px solid black;
+    background: red;
+    grid-column: 8/10;
+    grid-row: 2/4;
+}
+h1 {
+    grid-row: 5/5;
+    grid-column: 2/3;
+}
+footer {
+    grid-row: 5/5;
+    grid-column: 3/4;
+}
+.clockstuff {
+    background: black;
+}
+body {
+    background: black;
+}
+.kittens {
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    grid-row: 1/1;
+    grid-column: 1/10;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    /* justify-self: right; */
+    /* background:rgb(185, 109, 109); */
+    height: 50px;
+    align-items: center;
+}
+.navbar1:hover{
+    background-color: navy;
+}
+.downsize {
+    width: 50px;
+    height: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* justify-self: right; */
+}
+.todo {
+    display: flex;
+    color: darkgrey;
+    justify-content: center;
+}
+.proof {
+    font-family: 'Indie Flower', cursive;
+}
+.calculator-flex {
+    grid-template-rows: 2/-1;
+    grid-template-columns: 3;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: darkslateblue;
+  }
+  .input {
+    border: 1px solid darkgray;
+    height: 25%;
+    width: 100%;
+    justify-content: right;
+  }
+  .inputBox {
+    border: 1px solid blue;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    font-size: 64px;
+    text-align: right;
+  }
+  .button-content {
+    border: 1px solid gray;
+    height: 75%;
+    width: 100%;
+  }
+  .button-row {
+    border: 1px solid blue;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-element {
+    height: 100%;
+    width: 25%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  header {
+    height: 100px;
+    width: 100%;
+    background-color:grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* To: Juan I am trying to get the calculator to appear in grid-row
+  2-4 and column 2 it is not working when I select that grid area
+  well it eats my calculator display >.< */
+/* .downsize {
+    display: flex;
+    justify-self: left;
+} */
+.scroll-up {
+    grid-template-rows: 4/-1;
+    grid-template-columns: 1/-1;
+      height: 50px;	
+      overflow: hidden;
+      position: relative;
+      background: black;
+      color: orange;
+      /* border: 1px solid orange; */
+     }
+     .scroll-up p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      -moz-transform:translateY(100%);
+      -webkit-transform:translateY(100%);	
+      transform:translateY(100%);
+      /* Apply animation to this element */	
+      -moz-animation: scroll-up 5s linear infinite;
+      -webkit-animation: scroll-up 5s linear infinite;
+      animation: scroll-up 5s linear infinite;
+     }
+     /* Move it (define the animation) */
+     @-moz-keyframes scroll-up {
+      0%   { -moz-transform: translateY(100%); }
+      100% { -moz-transform: translateY(-100%); }
+     }
+     @-webkit-keyframes scroll-up {
+      0%   { -webkit-transform: translateY(100%); }
+      100% { -webkit-transform: translateY(-100%); }
+     }
+     @keyframes scroll-up {
+      0%   { 
+      -moz-transform: translateY(100%); /* Browser bug fix */
+      -webkit-transform: translateY(100%); /* Browser bug fix */
+      transform: translateY(100%); 		
+      }
+      100% { 
+      -moz-transform: translateY(-100%); /* Browser bug fix */
+      -webkit-transform: translateY(-100%); /* Browser bug fix */
+      transform: translateY(-100%); 
+      }
+     }
