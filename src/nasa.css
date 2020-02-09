@@ -22,7 +22,7 @@ article {
   background-color: wheat;
   justify-content: center;
   padding-top: 20px;
-  padding-bottom: 135px;
+  padding-bottom: 35px;
 }
 h1{
   padding-top: 200px;
@@ -37,4 +37,33 @@ h1{
   flex-direction: column;
   font-size: 12px;
   font-weight: 100;
+  padding: 0px;
+  align-items: center;
+
+}
+.sub2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 0px;
+  align-items: left;
+
+}
+/* .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  text-align: match-parent;
+} */
+.largebox {
+  display: flex;
+
+  height: 80px;
+}
+input {
+  padding-bottom: 10px;
 }
