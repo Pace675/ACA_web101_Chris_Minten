@@ -139,6 +139,47 @@ body {
 .scroll-up {
     grid-template-rows: 4/-1;
     grid-template-columns: 1/-1;
-    /* for some reason I can not assign this scrolling feature to 
-    row 3/4 and column 1......*/
-}
+      height: 50px;	
+      overflow: hidden;
+      position: relative;
+      background: black;
+      color: orange;
+      /* border: 1px solid orange; */
+     }
+     .scroll-up p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      -moz-transform:translateY(100%);
+      -webkit-transform:translateY(100%);	
+      transform:translateY(100%);
+      /* Apply animation to this element */	
+      -moz-animation: scroll-up 5s linear infinite;
+      -webkit-animation: scroll-up 5s linear infinite;
+      animation: scroll-up 5s linear infinite;
+     }
+     /* Move it (define the animation) */
+     @-moz-keyframes scroll-up {
+      0%   { -moz-transform: translateY(100%); }
+      100% { -moz-transform: translateY(-100%); }
+     }
+     @-webkit-keyframes scroll-up {
+      0%   { -webkit-transform: translateY(100%); }
+      100% { -webkit-transform: translateY(-100%); }
+     }
+     @keyframes scroll-up {
+      0%   { 
+      -moz-transform: translateY(100%); /* Browser bug fix */
+      -webkit-transform: translateY(100%); /* Browser bug fix */
+      transform: translateY(100%); 		
+      }
+      100% { 
+      -moz-transform: translateY(-100%); /* Browser bug fix */
+      -webkit-transform: translateY(-100%); /* Browser bug fix */
+      transform: translateY(-100%); 
+      }
+     }
