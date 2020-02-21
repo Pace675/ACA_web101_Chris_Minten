@@ -70,26 +70,30 @@ img {
     color: rgb(155, 109, 25);
     /* border: 1px solid orange; */
    }
-.scroll-up .one {
+/* already below duh!
+ .scroll-up .one {
     height: 150px;	
     overflow: hidden;
     position: relative;
-}
+} */
 .scroll-up .one {
+    overflow: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
     margin: 0;
-    line-height: 50px;
+    line-height: 1em;
     text-align: center;
     /* Starting position */
     -moz-transform:translateY(100%);
     -webkit-transform:translateY(100%);	
     transform:translateY(100%);
+    /* transform:translateX(20%); */
     /* Apply animation to this element */	
-    -moz-animation: scroll-up 15s linear infinite;
-    -webkit-animation: scroll-up 15s linear infinite;
-    animation: scroll-up 15s linear infinite;
+    -moz-animation: scroll-up 5s linear infinite;
+    -webkit-animation: scroll-up 5s linear infinite;
+    animation: scroll-up 5s linear infinite;
+    
 }
    /* Move it (define the animation) */
   @-moz-keyframes scroll-up {
@@ -104,12 +108,14 @@ img {
     0%   { 
     -moz-transform: translateY(100%); /* Browser bug fix */
     -webkit-transform: translateY(100%); /* Browser bug fix */
-    transform: translateY(100%); 		
+    transform: translateY(100%); 
+   	
   }
     100% { 
     -moz-transform: translateY(-100%); /* Browser bug fix */
     -webkit-transform: translateY(-100%); /* Browser bug fix */
     transform: translateY(-100%); 
+    transform: rotateX(90deg)
   }
 }
 

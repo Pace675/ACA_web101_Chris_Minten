@@ -40,6 +40,9 @@ h1 {
   overflow: hidden;
   position: relative;
  }
+ .pOne {
+  animation: example4 5s ease-out;
+ }
  h1 {
   position: absolute;
   width: 100%;
@@ -47,8 +50,7 @@ h1 {
   margin: 0;
   line-height: 50px;
   text-align: left;
- 
-  /* Apply animation to this element */	
+   /* Apply animation to this element */	
   -moz-animation: example4 5s ease-out;
   -webkit-animation: example4 5s ease-out;
   animation: example4 5s ease-out;
