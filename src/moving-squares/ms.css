@@ -1,5 +1,7 @@
 body {
     background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
   
 }
 div {
@@ -10,8 +12,9 @@ div {
   background-color: black;
   height: 100%;
   width: 100%;
-  padding: 0px;
-  margin: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 30px 30px 30px;
+  
 }
 .square1 {
   align-items: center;
@@ -103,4 +106,22 @@ div {
 .box:hover .kiddo:nth-child(odd){
  height: 100px;
  width: 100px;
+ transform: translateX(1000px) rotate(360deg);
+ transition: ease 3s;
 }
+.box {
+  margin-top: 100px;
+  height: auto;
+  width: 600px;
+  justify-content: center;
+  /* align-content: center; */
+}
+.kiddo :nth-child(odd){
+  transform: translateX(1000px);
+}
+.box:hover .kiddo:nth-child(even){
+  height: 25px;
+  width: 25px;
+  transform: translateX(-1000px) rotate(-360deg);
+  transition: ease 3s;
+ }
