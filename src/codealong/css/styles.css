@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  background-color: black;
+}
+li.topB {
+  padding: 0px;
+  margin: 0px;
+  background-color: darkslateblue;
+  
+  
+}
+img {
+  background: content-box;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+li {
+  font-family: 'Permanent Marker', cursive;
+  color:darkgrey;
+  padding: 20px 20px;
+}
+.main-container {
+  /* font-family: 'Indie Flower', cursive; */
+  /* border: 2px solid red; */
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
+  background: #000740;
+  color: ghostwhite;
+  background-color: black;
+}
+/* ~~~ NAV ~~~*/
+nav{
+  /* border:1px solid green; */
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  padding: 20px;
+}
+nav div.logo {
+  /* border:1px solid red; */
+  flex: 1;
+}
+nav ul {
+  /* border:1px solid red; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-between;
+}
+main{
+  /* border:1px solid pink; */
+  height: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+main .portfolio {
+  height: 300px;
+  /* border: 2px solid palevioletred; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .portfolio-img {
+  height: 75%;
+}
+main .portfolio-content {
+  flex-direction: column;
+}
+main .portfolio-content p:nth-of-type(1) {
+  font-size: 34px;
+}
+main .portfolio-content p:nth-of-type(2) {
+  text-transform: uppercase;
+  letter-spacing: 2.8;
+}
+main .portfolio-content button {
+  font-size: 16px;
+  margin: 20px 0 0;
+  border: 2px solid rgba(39, 36, 36, 0.729);
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: ghostwhite;
+}
+main .portfolio-content button:hover {
+  box-shadow: 7px 9px 9px 0px rgb(68, 67, 67),
+              7px 9px 9px 10px rgb(68, 67, 67),
+              7px 9px 9px 15px rgb(68, 67, 67),
+              7px 9px 9px 20px rgb(68, 67, 67);
+  /* transform: translateY(-1px); */
+  transform: translateX(-15px);
+  transition: 2s;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 7px 9px 9px 0px rgba(68, 67, 67,.1),
+              7px 9px 9px 15px rgba(68, 67, 67,.1),
+              7px 9px 9px 25px rgba(68, 67, 67,.1),
+              7px 9px 9px 40px rgba(68, 67, 67,.1);
+  
+}
+footer{
+  /* border:1px solid blue; */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  width:320px;
+  height:240px;
+  padding: 0px;
+}
+
+video:hover {
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin{
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin{
+  100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spin{
+  100% { transform: rotate(360deg); }
+}
+.fun:hover {
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
