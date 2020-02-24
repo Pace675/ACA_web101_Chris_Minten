@@ -1,0 +1,436 @@
+/* Fonts list
+
+    font-family: 'Indie Flower', ;
+
+    font-family: 'Trade Winds', ;
+
+    font-family: 'ZCOOL QingKe HuangYou', ;
+
+    font-family: 'Josefin Sans', ;
+ */
+ li:hover {
+   cursor: not-allowed;
+ }
+ h6 {
+  font-family: 'ZCOOL QingKe HuangYou';
+  font-size: 8px;
+  text-align: center;
+ }
+ article {
+   
+   font-family: 'Trade Winds';
+   width: 300px;
+   height: 400px;
+   border: 2px solid darkolivegreen;
+   margin-left: auto;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+ /* section {
+   padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ } */
+ .non {
+   display: flex;
+   padding-left: 25px;
+   padding-top: 10px;
+ }
+ ul {
+   display: flex;
+   flex-direction: row wrap;
+   list-style-type: none;
+   justify-content: flex-end;
+   width: 100px;
+   margin-left: 50px;
+   padding-top: 25px;
+ }
+ li {
+  justify-self: center;
+  padding: 10px;
+  font-family: 'Indie Flower';
+ }
+body {
+  background-color: darkgray;
+  height: 100%;
+  width: 100%;
+  display: flex wrap;
+  flex-direction: row;
+  
+}
+div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+nav {
+  height: 120px;
+  font-family: 'ZCOOL QingKe HuangYou', ;
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper {
+  justify-self: start;
+  box-sizing: content-box;
+  height: 100px;
+  width: 100px;
+  margin: 17px auto;
+  border: 2px solid gray;
+}
+
+.box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  /* border: 4px solid blue; */
+}
+
+.c {
+  background-color: rgb(71, 29, 148);
+  animation-name: flip;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+.y {
+  background-color: rgb(211, 27, 165);
+  animation-name: rotate-y;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.m {
+  background-color: rgb(13, 122, 37);
+  animation-name: rotate-m;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.k {
+  background-color: black;
+  animation-name: rotate-k;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+/* keyframes */
+/* 
+@keyframes translate-c {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+  transform: translate(50px, 0px);
+  }
+}
+
+/* // forked */
+
+/* @keyframes flip {
+  25% {
+      transform-origin: right;
+      animation-mode: forwards;
+      transform: rotateY(-180deg);
+  }
+  25.001% {
+      transform-origin: bottom;
+      transform: translateX(50px);
+  }
+  50% {
+      transform-origin: bottom;
+      transform: translateX(50px) rotateX(-180deg);
+  }
+  50.001% {
+      transform-origin: left;
+      transform: translateX(50px) translateY(50px);
+  }
+  75% {
+      transform-origin: left;
+      transform-origin: left;
+      transform: translateX(50px) translateY(50px) rotateY(180deg);
+  }
+  75.001% {
+      transform-origin: top;
+      transform: translateY(50px);
+  }
+  100% {
+      transform-origin: top;
+      transform-origin: top;
+      transform: translateY(50px) rotateX(180deg);
+  }
+} */
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  article {
+   
+    font-family: 'Trade Winds';
+    width: 300px;
+    height: 400px;
+    border: 2px solid darkolivegreen;
+    margin-left: auto;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section {
+    /* margin: 50px;
+    padding: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul {
+    display: flex;
+    flex-direction: row wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+    width: 100px;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrapper {
+    box-sizing: content-box;
+    height: 100px;
+    width: 100px;
+    margin: 17px auto;
+    border: 2px solid gray;
+    transform: rotateZ(-45deg);
+    transition: 5s ease;
+  }
+  
+  .box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    /* border: 4px solid white; */
+  }
+  
+  .c {
+    background-color: rgb(71, 29, 148);
+    animation-name: flip;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+  }
+  
+  .y {
+    background-color: rgb(211, 27, 165);
+    animation-name: rotate-y;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  .m {
+    background-color: rgb(13, 122, 37);
+    animation-name: rotate-m;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  .k {
+    background-color: black;
+    animation-name: rotate-k;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  /* keyframes */
+  
+  @keyframes translate-c {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+    transform: translate(50px, 0px);
+    }
+  }
+  
+  /* // forked */
+  
+  @keyframes flip {
+    25% {
+        transform-origin: right;
+        animation-mode: forwards;
+        transform: rotateY(-180deg);
+    }
+    25.001% {
+        transform-origin: bottom;
+        transform: translateX(50px);
+    }
+    50% {
+        transform-origin: bottom;
+        transform: translateX(50px) rotateX(-180deg);
+    }
+    50.001% {
+        transform-origin: left;
+        transform: translateX(50px) translateY(50px);
+    }
+    75% {
+        transform-origin: left;
+        transform-origin: left;
+        transform: translateX(50px) translateY(50px) rotateY(180deg);
+    }
+    75.001% {
+        transform-origin: top;
+        transform: translateY(50px);
+    }
+    100% {
+        transform-origin: top;
+        transform-origin: top;
+        transform: translateY(50px) rotateX(180deg);
+    }
+  }
+  
+}
+
+/*  Large and up (Desktops) */
+@media (min-width: 992px) {
+  article {
+   
+    font-family: 'Trade Winds';
+    width: 300px;
+    height: 400px;
+    border: 2px solid darkolivegreen;
+    margin-left: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-end;
+  }
+  ul {
+    display: flex;
+    flex-direction: row wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+    width: 500px;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrapper {
+    box-sizing: content-box;
+    height: 100px;
+    width: 100px;
+    margin: 17px auto;
+    border: 2px solid gray;
+    transform: rotateZ(-45deg);
+    transition: 5s ease;
+  }
+  
+  .box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    /* border: 4px solid white; */
+  }
+  
+  .c {
+    background-color: rgb(71, 29, 148);
+    animation-name: flip;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+  }
+  
+  .y {
+    background-color: rgb(211, 27, 165);
+    animation-name: rotate-y;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  .m {
+    background-color: rgb(13, 122, 37);
+    animation-name: rotate-m;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  .k {
+    background-color: black;
+    animation-name: rotate-k;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+  }
+  
+  /* keyframes */
+  
+  @keyframes translate-c {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+    transform: translate(50px, 0px);
+    }
+  }
+  
+  /* // forked */
+  
+  @keyframes flip {
+    25% {
+        transform-origin: right;
+        animation-mode: forwards;
+        transform: rotateY(-180deg);
+    }
+    25.001% {
+        transform-origin: bottom;
+        transform: translateX(50px);
+    }
+    50% {
+        transform-origin: bottom;
+        transform: translateX(50px) rotateX(-180deg);
+    }
+    50.001% {
+        transform-origin: left;
+        transform: translateX(50px) translateY(50px);
+    }
+    75% {
+        transform-origin: left;
+        transform-origin: left;
+        transform: translateX(50px) translateY(50px) rotateY(180deg);
+    }
+    75.001% {
+        transform-origin: top;
+        transform: translateY(50px);
+    }
+    100% {
+        transform-origin: top;
+        transform-origin: top;
+        transform: translateY(50px) rotateX(180deg);
+    }
+  }
+}
