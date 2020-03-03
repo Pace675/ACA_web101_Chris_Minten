@@ -1,0 +1,121 @@
+main {
+  font-family: 'Lacquer', sans-serif;
+}
+h3 {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: 'Fondamento', cursive;
+  color: blanchedalmond;
+}
+header {
+  height: 280px;
+  width: 100vw;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+.swapp {
+  height: 280px;
+  background-image: url(../img/tenor.gif);
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swapp:hover {
+  background-image: url(../img/sun.gif);
+  object-fit: cover;
+  cursor: crosshair;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  background-color: black;
+}
+/* div {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+} */
+img {
+  height: 200px;
+  width: auto;
+}
+.p {
+  grid-row: 3 / 2;
+  -moz-transform: rotateZ(20deg);
+  -webkit-transform: rotateZ(20deg);
+  transform: scaleZ(20deg);
+}
+.div2 {
+  grid-row: 2 / 4;
+  grid-column: 2;
+  color: rgb(155, 109, 25);
+  font-size: 18px;
+  font-family: 'Lacquer', sans-serif;
+  height: 300px;
+}
+.mymug {
+  display: grid;
+  grid-template-columns: 300px 50% 200px 350px;
+}
+.scroll-up {
+    font-family: 'Lacquer', sans-serif;
+    font-size: 18px;
+    grid-column: 2 / 2;
+    grid-row: 1;
+    height: 150px;	
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    background: black;
+    color: rgb(155, 109, 25);
+    /* border: 1px solid orange; */
+   }
+/* already below duh!
+ .scroll-up .one {
+    height: 150px;	
+    overflow: hidden;
+    position: relative;
+} */
+.scroll-up .one {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 1em;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);	
+    transform:translateY(100%);
+    /* transform:translateX(20%); */
+    /* Apply animation to this element */	
+    -moz-animation: scroll-up 5s linear infinite;
+    -webkit-animation: scroll-up 5s linear infinite;
+    animation: scroll-up 5s linear infinite;
+    
+}
+   /* Move it (define the animation) */
+  @-moz-keyframes scroll-up {
+    0%   { -moz-transform: translateY(100%); }
+    100% { -moz-transform: translateY(-100%); }
+  }
+  @-webkit-keyframes scroll-up {
+    0%   { -webkit-transform: translateY(100%); }
+    100% { -webkit-transform: translateY(-100%); }
+  }
+  @keyframes scroll-up {
+    0%   { 
+    -moz-transform: translateY(100%); /* Browser bug fix */
+    -webkit-transform: translateY(100%); /* Browser bug fix */
+    transform: translateY(100%); 
+   	
+  }
+    100% { 
+    -moz-transform: translateY(-100%); /* Browser bug fix */
+    -webkit-transform: translateY(-100%); /* Browser bug fix */
+    transform: translateY(-100%); 
+    transform: rotateX(90deg)
+  }
+}
+
