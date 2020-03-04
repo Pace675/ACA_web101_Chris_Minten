@@ -9,20 +9,22 @@ var points1 = 0;    // player 1 points
 var points2 = 0;    // player 2 points
 var size = 3;
 var counterTwo = 0;
-
-    function clicks(){
+// counter
+function addingOne(){
     counterTwo ++;
     document.getElementById("totalClicks").innerHTML = counterTwo;
-    console.log([clicks],[counterTwo]);
+    console.log('counterer :', counterTwo);
   }
-    function drawBoard() {
+document.addEventListener('click', addingOne, false);
+  
+  function drawBoard() {
       var Parent = document.getElementById("game");
       var counter = 1;
       
- 
-    while (Parent.hasChildNodes()) {
-        Parent.removeChild(Parent.firstChild);
-    }
+      
+      while (Parent.hasChildNodes()) {
+          Parent.removeChild(Parent.firstChild);
+        }
 
     for (s = 0; s < 3; s++) {
         var row = document.createElement("tr");
