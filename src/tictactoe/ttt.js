@@ -13,11 +13,34 @@ var counterTwo = 0;
 function addingOne(){
     counterTwo ++;
     document.getElementById("totalClicks").innerHTML = counterTwo;
-    console.log('counterer :', counterTwo);
+    // console.log('counterer :', counterTwo,document.getElementById("totalClicks").innerHTML);
   }
-document.addEventListener('click', addingOne, true);
-  
-  function drawBoard() {
+document.addEventListener('click', addingOne, false);
+document.addEventListener('click', clickyCounter, false);
+// special events at specific counts all mouse clicks count!
+function clickyCounter() {
+    
+    if (counterTwo == 13) {
+        console.log('Count', counterTwo);
+        alert('Oh noes!!!! Unlucky 13 yer jinxed fer life!!!');
+    }
+    
+    else if (counterTwo === 21) {
+        alert('21!!!!Black-Jack we got a winner!');
+    }
+    else if (counterTwo === 666) {
+        alert('Satan kitty approves!!!! ROWR Nya!');
+    }
+    else if (counterTwo === 9001) {
+        alert('OVER 9000!!!!!!!111!!!1oneoneJuanone!!!1');
+    }
+    else if (counterTwo === 8) {
+        alert('Magic 8 ball says unlikely!');
+    }
+}
+
+
+function drawBoard() {
       var Parent = document.getElementById("game");
       var counter = 1;
       
