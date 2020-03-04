@@ -15,7 +15,7 @@ function addingOne(){
     document.getElementById("totalClicks").innerHTML = counterTwo;
     console.log('counterer :', counterTwo);
   }
-document.addEventListener('click', addingOne, false);
+document.addEventListener('click', addingOne, true);
   
   function drawBoard() {
       var Parent = document.getElementById("game");
