@@ -1,0 +1,127 @@
+body {
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+  
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 30px 30px 30px 30px;
+  
+}
+.square1 {
+  align-items: center;
+  background-color: blueviolet;
+  height: 50px;
+  width: 50px;
+
+}
+.square2 {
+  background-color: greenyellow;
+  height: 50px;
+  width: 50px;
+
+}
+.square3 {
+  background-color: crimson;
+  height: 50px;
+  width: 50px;
+
+}
+.square4 {
+  background-color: lightpink;
+  height: 50px;
+  width: 50px;
+
+}
+.square5 {
+  background-color: chocolate;
+  height: 50px;
+  width: 50px;
+
+}
+.square6 {
+  background-color: cornflowerblue;
+  height: 50px;
+  width: 50px;
+
+}
+.square7 {
+  background-color: rgb(25, 92, 34);
+  height: 50px;
+  width: 50px;
+
+}
+.square8 {
+  background-color: crimson;
+  height: 50px;
+  width: 50px;
+
+}
+.square9 {
+  background-color: azure;
+  height: 50px;
+  width: 50px;
+
+}
+.square10 {
+  background-color: rgb(167, 111, 29);
+  height: 50px;
+  width: 50px;
+
+}.square11 {
+  background-color: crimson;
+  height: 50px;
+  width: 50px;
+
+}.square12 {
+  background-color: indigo;
+  height: 50px;
+  width: 50px;
+
+}.square13 {
+  background-color: turquoise;
+  height: 50px;
+  width: 50px;
+
+}
+.square14 {
+  background-color: blanchedalmond;
+  height: 50px;
+  width: 50px;
+
+}.square15 {
+  background-color: navajowhite;
+  height: 50px;
+  width: 50px;
+
+}
+.box:hover .kiddo:nth-child(odd){
+ height: 100px;
+ width: 100px;
+ transform: translateX(1000px) rotate(360deg);
+ transition: ease 3s;
+}
+.box {
+  margin-top: 100px;
+  height: auto;
+  width: 600px;
+  justify-content: center;
+  /* align-content: center; */
+}
+.kiddo :nth-child(odd){
+  transform: translateX(1000px);
+}
+.box:hover .kiddo:nth-child(even){
+  height: 25px;
+  width: 25px;
+  transform: translateX(-1000px) rotate(-360deg);
+  transition: ease 3s;
+ }
