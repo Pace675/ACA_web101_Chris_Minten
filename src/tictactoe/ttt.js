@@ -9,7 +9,7 @@ var points1 = 0;    // player 1 points
 var points2 = 0;    // player 2 points
 var size = 3;
 var counterTwo = 0;
-// counter
+// counter nada
 function addingOne(){
     counterTwo ++;
     document.getElementById("totalClicks").innerHTML = counterTwo;
