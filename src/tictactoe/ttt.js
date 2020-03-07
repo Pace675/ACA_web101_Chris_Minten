@@ -9,20 +9,45 @@ var points1 = 0;    // player 1 points
 var points2 = 0;    // player 2 points
 var size = 3;
 var counterTwo = 0;
-
-    function clicks(){
+// counter
+function addingOne(){
     counterTwo ++;
     document.getElementById("totalClicks").innerHTML = counterTwo;
-    console.log([clicks],[counterTwo]);
+    // console.log('counterer :', counterTwo,document.getElementById("totalClicks").innerHTML);
   }
-    function drawBoard() {
+document.addEventListener('click', addingOne, false);
+document.addEventListener('click', clickyCounter, false);
+// special events at specific counts all mouse clicks count!
+function clickyCounter() {
+    
+    if (counterTwo == 13) {
+        console.log('Count', counterTwo);
+        alert('Oh noes!!!! Unlucky 13 yer jinxed fer life!!!');
+    }
+    
+    else if (counterTwo === 21) {
+        alert('21!!!!Black-Jack we got a winner!');
+    }
+    else if (counterTwo === 666) {
+        alert('Satan kitty approves!!!! ROWR Nya!');
+    }
+    else if (counterTwo === 9001) {
+        alert('OVER 9000!!!!!!!111!!!1oneoneJuanone!!!1');
+    }
+    else if (counterTwo === 8) {
+        alert('Magic 8 ball says unlikely!');
+    }
+}
+
+
+function drawBoard() {
       var Parent = document.getElementById("game");
       var counter = 1;
       
- 
-    while (Parent.hasChildNodes()) {
-        Parent.removeChild(Parent.firstChild);
-    }
+      
+      while (Parent.hasChildNodes()) {
+          Parent.removeChild(Parent.firstChild);
+        }
 
     for (s = 0; s < 3; s++) {
         var row = document.createElement("tr");
