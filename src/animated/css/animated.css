@@ -36,6 +36,7 @@
    display: flex;
    padding-left: 25px;
    padding-top: 10px;
+   
  }
  ul {
    display: flex;
@@ -79,6 +80,8 @@ nav {
   width: 100px;
   margin: 17px auto;
   border: 2px solid gray;
+  transform: rotateZ(45deg);
+  transition: 5s;
 }
 
 .box-container {

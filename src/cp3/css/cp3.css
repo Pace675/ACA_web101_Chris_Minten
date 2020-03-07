@@ -1,0 +1,94 @@
+ .non {
+   display: flex;
+   padding-left: 25px;
+   padding-top: 10px;
+   
+ }
+ ul {
+   display: flex;
+   flex-direction: row wrap;
+   list-style-type: none;
+   justify-content: flex-end;
+   width: 100px;
+   margin-left: 50px;
+   padding-top: 25px;
+ }
+ li {
+  justify-self: center;
+  padding: 10px;
+  font-family: 'Indie Flower';
+ }
+body {
+  background-color: darkgray;
+  height: 100%;
+  width: 100%;
+  display: flex wrap;
+  flex-direction: row;
+  
+}
+div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+nav {
+  height: 120px;
+  font-family: 'ZCOOL QingKe HuangYou', ;
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper {
+  justify-self: start;
+  box-sizing: content-box;
+  height: 100px;
+  width: 100px;
+  margin: 17px auto;
+  border: 2px solid gray;
+  animation-name: rotate-Z(45deg);
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  /* transform: rotateZ(45deg);
+  transition: 5s; */
+}
+
+.box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  /* border: 4px solid blue; */
+}
+
+.c {
+  background-color: rgb(71, 29, 148);
+  animation-name: flip;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+.y {
+  background-color: rgb(211, 27, 165);
+  animation-name: rotate-y;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.m {
+  background-color: rgb(13, 122, 37);
+  animation-name: rotate-m;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.k {
+  background-color: black;
+  animation-name: rotate-k;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
